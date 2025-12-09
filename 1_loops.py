@@ -71,6 +71,6 @@ list = list(range(5,26))
 base_line = 0
 
 for num in list:
-    base_line += list
+    base_line += num
 
 print("total ", base_line)
