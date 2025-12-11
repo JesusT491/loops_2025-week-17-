@@ -8,13 +8,24 @@
 
 # Write a program that prints the numbers from **1 to 10**, each on a new line.
 
+number_list = range(1,11)
 
+print(number_list)
+
+for num in number_list:
+    print(num)
 
 # ### **Problem 2: Sum of Numbers
 
 # Ask the user for a number **n**, then calculate and display the **sum of all numbers from 1 to n**.
 
+user_number = int(input("Give me a number: "))
 
+sum_holder = 0
+
+for num in range(1, user_number+1):
+    sum_holder += num
+print("The sum of numbers from 1 to", user_number, "is:", sum_holder)       
 
 # ### **Problem 3: Factorial Calculator
 
@@ -22,6 +33,16 @@
 
 # *(Example: factorial of 5 is 120)
 
+def factorial(n):
+
+    factorial = 1
+
+    for i in range(n):
+        factorial *= i+1
+
+    return factorial
+
+print(factorial(5))
 
 # ### **Problem 4: Count Vowels**
 
@@ -32,7 +53,14 @@
 
 # Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
 
+n = int(input("Enter a number: "))
+list2 = list(range(2, n+1,2))
 
+for i in list2:
+    if i % 2 == 0:
+        print("even", i)
+    else:
+        print('odd', i)
 
 # ### **Problem 6: Reverse a String**
 

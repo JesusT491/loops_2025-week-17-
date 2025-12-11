@@ -65,7 +65,7 @@ for num in new_numbers:
 print("total ", num1)
 
 #challenge3
-
+# sum all the numbers up and print the total
 list = list(range(5,26))
 
 base_line = 0
